@@ -39,6 +39,7 @@ public class DownloadThread extends Thread {
 				accessFile.write(buf, 0, len);
 			}
 			accessFile.close();
+			System.out.println("Thread " + (index + 1) + " download over!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
